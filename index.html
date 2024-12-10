@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles de la Propiedad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h11>Detalles de la Propiedad</h11>
+    </header>
+
+    <main>
+        <div class="property-details">
+            <h22 id="property-title">Casa Quinta Castilla la Nueva</h22>
+            <p id="property-description" class="product-text">
+                Hermosa casa quinta de 7 habitaciones, 2 baños, jardín amplio y sala equipada.
+            </p>
+
+            <div class="gallery">
+                <h3>Propiedad</h3>
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczMNBbGN4xVS4Eneh_S6zc3b0icMeXJCjYT2k5zwOqLWOhwUqm4rK6ktv6cpY2QGk2eoMHxA9tQRa1tlVjOTn3MDLrPU1VpJmNyH0Lqc8KXQvZmhbzBNEZpB73TOmkAwql6RZPYaf_1PTgfk0jBkRBA=w641-h641-s-no-gm?authuser=0" alt="Foto portada propiedad">
+            </div>
+
+
+            <div class="product-description">
+                <h2 class="product-title">Casa Quinta Castilla la Nueva</h2>
+                <p class="product-text">Esta casa quinta es increíble que puede resolver tus problemas de intranquilidad de manera eficiente y moderna. Incluye características avanzadas, este es un diseño atractivo y a un precio competitivo. ¡No te lo pierdas!</p>
+                <button class="product-button">Comprar Ahora</button>
+            </div>
+
+            <!--
+            <div class="gallery">
+                <h3>Galería</h3>
+                <img src="https://via.placeholder.com/300" alt="Foto de la propiedad">
+                <img src="https://via.placeholder.com/300" alt="Foto de la cocina">
+                <img src="https://via.placeholder.com/300" alt="Foto del jardín">
+            </div>
+
+
+            <div class="gallery">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczOY2dqJNPzqOsUi64p9KA1bZBXJz09_IrUpOnv5-Mm6z7_W_0B6NczEvjk5Sjk2gunI8RGYp5YpW4t5v8VOrn0eZM-GvRW_yUVrRjMXa0PMG-LzX_UG2-HcbdGXYnyVhoEcYcehnhzTDbafNar-Sfg=w641-h641-s-no-gm?authuser=0" alt="Imagen 1">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczPyeFdOiRljz1g0vdUllIGiu763sXHCpfrvAJzvt_GoCIgmygxLjxLg9vxgZQzdAtgncOC7-j_J6Gd2z4eZggKnyYcky60XIUBMRImoS8uqsPCWBqq40OLRCwPeGvfFhgx2JIKK5TSLn85nS3-5Z6A=w641-h641-s-no-gm?authuser=0" alt="Imagen 2">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczNS4iz0j6sous3-TV3s8NmLrYedFTeuM_UnPupLNGs05fgjzAQ3vsmioqe6ase0XFuIJJI8WvkuEAb-peS89iKmStMT5me2BtHL6qIiIMIhAFLuOsa40tuGKPD-MnFMYON-JkJ80w4IBU539E5SkR0=w641-h641-s-no-gm?authuser=0" alt="Imagen 3">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczNOeETWsKIsjWzZzY5pqifAFeinFvbXT0b1hz6ZABrX-plBq2Jtr8EYS5hFZvALTt_UFSSQSIygOUHHjUltQ2E657K1brNx5fMn-5oUqVJHWl01IbF_5gQwsgi28GdxBdifQiUdDcwRrxmXKlpklx8=w641-h641-s-no-gm?authuser=0" alt="Imagen 4">
+            </div>
+
+
+             <div class="virtual-tour">
+                <h3>Recorrido Virtual</h3>
+                <iframe 
+                    src="tu_ruta_de_imagen_360.html" 
+                    width="100%" 
+                    height="400" 
+                    frameborder="0">
+                </iframe>
+            </div>
+
+            <div class="gallery">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczOY2dqJNPzqOsUi64p9KA1bZBXJz09_IrUpOnv5-Mm6z7_W_0B6NczEvjk5Sjk2gunI8RGYp5YpW4t5v8VOrn0eZM-GvRW_yUVrRjMXa0PMG-LzX_UG2-HcbdGXYnyVhoEcYcehnhzTDbafNar-Sfg=w641-h641-s-no-gm?authuser=0" alt="Imagen 1">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczPyeFdOiRljz1g0vdUllIGiu763sXHCpfrvAJzvt_GoCIgmygxLjxLg9vxgZQzdAtgncOC7-j_J6Gd2z4eZggKnyYcky60XIUBMRImoS8uqsPCWBqq40OLRCwPeGvfFhgx2JIKK5TSLn85nS3-5Z6A=w641-h641-s-no-gm?authuser=0" alt="Imagen 2">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczNS4iz0j6sous3-TV3s8NmLrYedFTeuM_UnPupLNGs05fgjzAQ3vsmioqe6ase0XFuIJJI8WvkuEAb-peS89iKmStMT5me2BtHL6qIiIMIhAFLuOsa40tuGKPD-MnFMYON-JkJ80w4IBU539E5SkR0=w641-h641-s-no-gm?authuser=0" alt="Imagen 3">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczNOeETWsKIsjWzZzY5pqifAFeinFvbXT0b1hz6ZABrX-plBq2Jtr8EYS5hFZvALTt_UFSSQSIygOUHHjUltQ2E657K1brNx5fMn-5oUqVJHWl01IbF_5gQwsgi28GdxBdifQiUdDcwRrxmXKlpklx8=w641-h641-s-no-gm?authuser=0" alt="Imagen 4">
+                
+                
+            </div>-->
+
+            <div class="virtual-tour">
+                <h3>Recorrido Virtual en ensamble</h3>
+                
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPjV04Jb6QXfdXkXZ-2HCcnZUfNnM5i2w3L10RFFOCQ8__RF8iIEpdSpo8qlihtyEiIqbESPbsN7Le8PIb5psnWKveXZJo_g7dB3IqIRuWICBvjXgL_KsCDJ88q_mY_Y40oF2I1zqB3Zd1Ahm_12fI=w641-h641-s-no-gm?authuser=0" alt="Imagen 1">
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczNAp3Da_ibu7_sJKQS9byIOXK3SFHG7LtaLP66vYf6hnkar5Jeudg_C8NhVg2oHMinjvVykTYCF_T_wZ_k4OeXF5JCmEsrexWDaI3GNrXDoypMkc7s-1eRElMv4NFV0OkyyDEGMEvhEryhcizdm9IU=w641-h641-s-no-gm?authuser=0" alt="Imagen 2">
+                
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczPWSQIo6fpIDT5tvDT7bUato_-fcF2X2FKaPBHpNwN4GXK9WXygwxwKXdzcNZc2ZGw3to5xaL-8h7V8Zaq03B8PdXhMf58UGMlFxlEWEYZRX3WOZVgcgarq5Fm50vb5HxwmzbrJf3s9Af-JDd49a5U=w641-h641-s-no-gm?authuser=0" alt="Imagen 3">
+                
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczO62sit25irT9mG6u_llV2EEwwWL5OK3QqtMSgSKuZ6cZ49u7U3F3KmeRBlGjlKzquo6lk1qT8Di3LZvXlvb1Qr_SlAoBcXhwL5JaU-cMMA7oVlRv4D3ywEbes3PCuWyhAgMlOJozPxVjs5UbHJ9NY=w641-h641-s-no-gm?authuser=0" alt="Imagen 4">
+                
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczMitd2vnvxkfOZlnrvno1ThcIg-xL69FWB0vYcXGruGLWu9uMVvjh0yIBYVXfLOvzYohSDcFijk0LLExHC9Brjj7eg8n07usNlATVOKgwRoKq-rQOkB0kNn4ZfTWJHAoBiVtohrCHJrSNZLtfDpnG8=w641-h641-s-no-gm?authuser=0" alt="Imagen 5">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczPlOzw5WaCkPi44tCyDfxAANP6we_xORgDFoGIS5gmshecpoRlwidl4HjMZCZx-eeuVTGam9Tm8FxBxHw2o7PEaMam3vH0Q7wosUzr0QsZxC2gl2psiZ2ZvBUF7Fijo2eP8zVbezZDzQYm1xGdB6BY=w641-h641-s-no-gm?authuser=0" alt="Imagen 6">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczP5Zp6lyrH1aTyDqVu1eelsZfWgYXwkjxYCeRGWEjklz-lxeQDli82BktzQ-JnzE9hybs0is6qRPt8fEmYdF89rDz9CkE5Ax6PLqF_ewpSVSQezswv5YviJRcW0KYesOA7kqmReyyLJ7UprrRwuJLk=w641-h641-s-no-gm?authuser=0" alt="Imagen 7">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczM2TPp7oclmItVHti308l59UBmHGb1DA5VCIPRD33JJSe9SA2FaHSMw0rkWVzXLdEQYTy0Sb_cU_pLfIS0P546Q0cIdA4PRoVfWKd0__uwbetI-_go_w43C0dWo4gOD-fGVY1O13Dyfq4PAGJQj2nA=w641-h641-s-no-gm?authuser=0" alt="Imagen 8">
+            
+                
+            </div>
+
+
+            <div class="contact-section">
+                <h4>Contactar al Vendedor</h4>
+                <form>
+                    <input type="text" placeholder="Tu Nombre" required>
+                    <input type="email" placeholder="Tu Correo" required>
+                    <input type="number" placeholder="Tu Telefono" required>
+                    <textarea placeholder="Tu Mensaje"></textarea>
+                    <button type="submit" class="product-button">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Compra y Venta de Propiedades</p>
+    </footer>
+</body>
+</html>
