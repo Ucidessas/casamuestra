@@ -56,6 +56,55 @@ function contactProperty(id) {
   alert(`Contactando al vendedor de: ${property.title}`);
 }
 
+
+
+
+
+
+// Obtener referencias de los elementos
+const mainImage = document.getElementById("mainImage");
+const thumbnails = document.querySelectorAll(".thumbnail");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+let currentIndex = 0; // Índice de la imagen actual
+
+// Cambiar la imagen principal
+function updateMainImage(index) {
+    const selectedThumbnail = thumbnails[index];
+    const newImageSrc = selectedThumbnail.getAttribute("data-image");
+
+    // Actualizar la imagen principal
+    mainImage.src = newImageSrc;
+
+    // Actualizar el estado activo de las miniaturas
+    thumbnails.forEach((thumbnail) => thumbnail.classList.remove("active"));
+    selectedThumbnail.classList.add("active");
+}
+
+// Navegar a la imagen anterior
+prevBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + thumbnails.length) % thumbnails.length;
+    updateMainImage(currentIndex);
+});
+
+// Navegar a la imagen siguiente
+nextBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % thumbnails.length;
+    updateMainImage(currentIndex);
+});
+
+// Click en miniaturas
+thumbnails.forEach((thumbnail, index) => {
+    thumbnail.addEventListener("click", () => {
+        currentIndex = index;
+        updateMainImage(currentIndex);
+    });
+});
+
+
+
+
 // Evento de búsqueda
 document.getElementById('searchButton').addEventListener('click', filterProperties);
 

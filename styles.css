@@ -4,6 +4,8 @@ body{
   background: linear-gradient(150deg, #38ff63, #5eaefa); /* Fondo degradado atractivo */
   
   /*background: rgb(234, 253, 126);*/
+
+  
 }
 
 .property-details {
@@ -107,7 +109,7 @@ align-items: center;
 
 .virtual-tour iframe {
   border: none;
-  
+  padding: 30px 10px; /* Espaciado interno */
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -220,3 +222,88 @@ align-items: center;
 .contact-section form button:hover {
   background-color: #45a049;
 }
+
+
+
+
+
+/* Container for the gallery */
+.gallery1-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  background: linear-gradient(135deg, #38ff63, #5eaefa); /* Fondo degradado atractivo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 50px; /* Espaciado interno */
+  gap: 50px;
+  border-radius: 30px;
+}
+
+/* Main viewer for the image */
+.gallery1-viewer {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.gallery1-viewer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Thumbnail controls */
+.gallery1-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #6ac8ff;
+  color: rgba(14, 255, 74, 0.801);
+  border-radius: 30px;
+}
+
+.gallery1-thumbnails {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+  margin: 0 10px;
+}
+
+.gallery1-thumbnails img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.gallery1-thumbnails img.active,
+.gallery1-thumbnails img:hover {
+  transform: scale(1.1);
+  border: 2px solid #09fa46;
+}
+
+/* Navigation buttons */
+.gallery1-btn {
+  background-color: #15d0ff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.gallery1-btn:hover {
+  background-color: #583cf7;
+}
+
